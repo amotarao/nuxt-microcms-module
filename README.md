@@ -54,7 +54,44 @@ $ cross-env DANGEROUSLY_SET_MICROCMS_GLOBAL_DRAFT_KEY=true yarn generate
 ```
 
 
-### 使い方
+## 使い方
+
+### SSR
+
+```vue
+<template>
+  <div>
+    <p v-for="item in items" :key="item.id">{{ item.title }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $microcms }) {
+    // 参考 https://github.com/wantainc/microcms-js-sdk#how-to-use
+    const res = await $microcms.client
+      .get({
+        endpoint: 'endpoint',
+        queries: { limit: 20, filters: 'createdAt[greater_than]2021' },
+        useGlobalDraftKey: false, // This is an option if your have set the globalDraftKey. Default value true.
+      })
+      .catch((err) => console.error(err));
+
+    return {
+      items: res.contents,
+    };
+  },
+  data() {
+    return {
+      items: [],
+    };
+  },
+};
+</script>
+```
+
+
+### CSR
 
 ```vue
 <template>
@@ -83,6 +120,7 @@ export default {
       })
       .catch((err) => console.error(err));
   },
+  fetchOnServer: false,
 };
 </script>
 ```
