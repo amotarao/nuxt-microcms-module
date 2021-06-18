@@ -1,6 +1,8 @@
 # nuxt-microcms-module
 
-Nuxt.js プロジェクトで [microCMS](https://microcms.io/) を利用するためのモジュール  
+Nuxt.js プロジェクトで [microCMS](https://microcms.io/) を利用するためのモジュール
+
+**公式なモジュールではありません**
 
 
 ## はじめる
