@@ -1,7 +1,7 @@
-import { createClient, ClientParams } from 'microcms-js-sdk';
+import type { createClient } from 'microcms-js-sdk';
 
 interface MicrocmsOptions {
-  client: ClientParams;
+  client: Parameters<typeof createClient>[0];
 }
 
 interface MicrocmsFunc {
