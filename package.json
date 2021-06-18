@@ -1,6 +1,6 @@
 {
   "name": "@amotarao/nuxt-microcms-module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "lib/module.js",
   "repository": "git@github.com:amotarao/nuxt-microcms-module.git",
   "license": "Apache-2.0",
