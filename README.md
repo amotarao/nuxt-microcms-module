@@ -48,7 +48,8 @@ export default {
 # Linux 系
 $ DANGEROUSLY_SET_MICROCMS_GLOBAL_DRAFT_KEY=true yarn generate
 
-# Windows も対応
+# Windows にも対応
+# cross-env のインストールが必要
 $ cross-env DANGEROUSLY_SET_MICROCMS_GLOBAL_DRAFT_KEY=true yarn generate
 ```
 
