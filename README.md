@@ -10,11 +10,11 @@ Nuxt.js プロジェクトで [microCMS](https://microcms.io/) を利用する�
 ### インストール
 
 ```bash
-$ npm install -S microcms-js-sdk nuxt-microcms-module
+$ npm install -S microcms-js-sdk @amotarao/nuxt-microcms-module
 
 # OR
 
-$ yarn add microcms-js-sdk nuxt-microcms-module
+$ yarn add microcms-js-sdk @amotarao/nuxt-microcms-module
 ```
 
 
@@ -24,7 +24,7 @@ $ yarn add microcms-js-sdk nuxt-microcms-module
 // nuxt.config.js
 
 export default {
-  modules: ['nuxt-microcms-module'],
+  modules: ['@amotarao/nuxt-microcms-module'],
 
   microcms: {
     // 参考 https://github.com/wantainc/microcms-js-sdk#how-to-use
