@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-microcms-module",
+  "name": "@amotarao/nuxt-microcms-module",
   "version": "0.0.0",
   "main": "lib/module.js",
   "repository": "git@github.com:amotarao/nuxt-microcms-module.git",
