@@ -4,6 +4,9 @@
   "main": "lib/module.js",
   "repository": "git@github.com:amotarao/nuxt-microcms-module.git",
   "license": "Apache-2.0",
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "microcms-js-sdk": "1.x"
   },
