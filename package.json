@@ -2,6 +2,7 @@
   "name": "@amotarao/nuxt-microcms-module",
   "version": "1.0.1",
   "main": "lib/module.js",
+  "types": "types/index.d.ts",
   "repository": "git@github.com:amotarao/nuxt-microcms-module.git",
   "license": "Apache-2.0",
   "files": [
